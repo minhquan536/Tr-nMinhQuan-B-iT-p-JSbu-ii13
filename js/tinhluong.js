@@ -24,7 +24,7 @@ function tinhLuong() {
 
     var tongSoTien = luongMotNgay * soNgayLam;
 
-    console.log(tongSoTien);
+    // console.log(tongSoTien);
 
     document.getElementById("txtResult-TinhLuong").innerHTML = "tổng tiền lương <br>" + tongSoTien.toLocaleString();
 }
