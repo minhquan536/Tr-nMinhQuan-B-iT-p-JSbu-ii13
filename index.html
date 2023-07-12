@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- BS4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="w-50">
+            <!-- bài 1 -->
+            <h2>Tính Lương</h2>
+                <form>
+                        <div class="form-group">
+                        <label for="username">lương 1 ngày</label>
+                        <input type="number" class="form-control" id="luongMotNgay">
+                        </div>
+                        <div class="form-group">
+                        <label for="username">số ngày làm</label>
+                        <input type="number" class="form-control" id="soNgayLam">
+                        </div>
+                        <!-- dùng cách 2 vào onclick -->
+                        <button type="button" class="btn btn-success" id="tinhLuongTong" >tính tiền</button>
+                </form>
+            <p id="txtResult-TinhLuong" class="alert alert-danger"></p>
+
+            <!-- bài 2 -->
+            <h2>Tính Số Thực</h2>
+                <form>
+                        <div class="form-group">
+                            <label for="username">số thực 1</label>
+                            <input type="number" class="form-control" id="soThuc1">
+                        </div>
+                        <div class="form-group">
+                            <label for="username">số thực 2</label>
+                            <input type="number" class="form-control" id="soThuc2">
+                        </div>
+                        <div class="form-group">
+                            <label for="username">số thực 3</label>
+                            <input type="number" class="form-control" id="soThuc3">
+                        </div>
+                        <div class="form-group">
+                            <label for="username">số thực 4</label>
+                            <input type="number" class="form-control" id="soThuc4">
+                        </div>
+                        <div class="form-group">
+                            <label for="username">số thực 5</label>
+                            <input type="number" class="form-control" id="soThuc5">
+                        </div>
+                        </div>
+                        <!-- dùng cách 2 vào onclick -->
+                        <button type="button" class="btn btn-success" id="tinhTongCacSoThuc" >Tổng Số thực</button>
+                </form>
+            <p id="txtResult-TongSoThuc" class="alert alert-danger"></p>
+
+            <!-- bài 3 -->
+            <h2>QUY ĐỔI TIỀN</h2>
+                <form>
+                        <div class="form-group">
+                            <label for="username">số thực 1</label>
+                            <input type="number" class="form-control" id="soTienDoi">
+                        </div>
+                    
+                        <!-- dùng cách 2 vào onclick -->
+                        <button type="button" class="btn btn-success" id="tienDoiDuoc" >SỐ TIỀN SAU KHI ĐỔI</button>
+                </form>
+            <p id="txtResult-TienDoi" class="alert alert-danger"></p>
+
+
+
+            <!-- bài 4 -->
+            <h2>TÍNH DIỆN TÍCH HINH CHỨ NHẬT</h2>
+                <form>
+                        <div class="form-group">
+                            <label for="username">chiều dài</label>
+                            <input type="number" class="form-control" id="chieuDai">
+                        </div>
+                        <div class="form-group">
+                            <label for="username">chiều rộng</label>
+                            <input type="number" class="form-control" id="chieuRong">
+                        </div>
+                        <!-- dùng cách 2 vào onclick -->
+                        <button type="button" class="btn btn-success" id="tinhHCN" >tính</button>
+                </form>
+            <p id="txtResult-HCN" class="alert alert-danger"></p>
+
+            <!-- bài 5 -->
+            <h2>TÍNH TỔNG 2 KÍ SỐ</h2>
+                <form>
+                        <div class="form-group">
+                            <label for="username">nhập 2 kí số</label>
+                            <input type="number" class="form-control" id="nhapSo">
+                        </div>
+                    
+                        <!-- dùng cách 2 vào onclick -->
+                        <button type="button" class="btn btn-success" id="tinhHaiKi" >tính</button>
+                </form>
+            <p id="txtResult-HaiKi" class="alert alert-danger"></p>
+    </div>
+</div>
+     <!-- BS4 -->
+
+     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <script src="./js/tinhluong.js"></script>
+    <script src="./js/tongsothuc.js"></script>
+    <script src="./js/doitien.js"></script>
+    <script src="./js/dthcn.js"></script>
+    <script src="./js/tinhHaiKi.js"></script>
+    
+</body>
+</html>
